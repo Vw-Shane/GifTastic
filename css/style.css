@@ -1,3 +1,18 @@
-body{
-	margin-top: 50px;
+body { 
+  background: url(../Pics/mike.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#Gifs{
+	margin-left: 15%;
+}
+#ButtonsHere{
+	margin-top: 2%;
+}
+#move-me{
+	float: right;
+	margin-top: 1%;
+	margin-right: 10%;
 }

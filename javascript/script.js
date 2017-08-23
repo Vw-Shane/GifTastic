@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 
     $(document).on("click", ".person", GifFunk);
-
+/// add this some where, $(#TEXT BOX).val(" ");
 
     function Buttons() {
         // $("#ButtonsHere").empty(); // this prevents repeat buttons
@@ -78,7 +78,8 @@ $(document).ready(function() {
                 $("#Gifs").on("click", function() {
                 	console.log("sfdg");
                     // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-                    var state = $(this).attr("still", );
+                    var state = $(this).attr(results[i].type);
+                    console.log(state);
                     // If the clicked image's state is still, update its src attribute to what its data-animate value is.
                     // Then, set the image's data-state to animate
                     // Else set src to the data-still value
