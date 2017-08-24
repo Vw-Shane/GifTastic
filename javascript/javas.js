@@ -29,9 +29,10 @@ $(document).ready(function() {
     };
 
     function GifFunk() {
+    	var ranNum = Math.floor(Math.random() * 20) + 10;
         var gif = $(this).attr("data-name");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-            gif + "&api_key=dc6zaTOxFJmzC&limit=10";
+            gif + "&api_key=dc6zaTOxFJmzC&limit="+ ranNum;
         $.ajax({
                 url: queryURL,
                 method: "GET"
